@@ -1,0 +1,143 @@
+$header-colour:#441D75;
+$header-font: halyard-text, sans-serif;
+$body-font: halyard-text, sans-serif;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,900,700,500);
+
+body .orientation-container{
+    
+    color:#fff; 
+    font-family: $body-font;
+    margin:0; 
+    //will-change: background;
+}
+
+// For the Welcome Class of 2027
+.welcome-heading-container{
+    height:100vh;
+}
+
+// For the text on the purple screen
+.welcome-message-container{
+    height:100vh;
+}
+
+// APPLY WHEN SCREEN IS SMALLER FONT GETS SMALLER
+.orientation-container h2{
+    font-size:4.5em; 
+    font-weight:900; 
+    margin-left: 1.5em;
+    margin-right: 5em;
+    margin-top: 0em;
+    margin-bottom:0em;
+    span{
+        background-color: #BDB7E9;
+    }
+    @media only screen and (max-width:800px){
+        font-size: 3em;
+    }
+    @media only screen and (max-width: 500px){
+        font-size: 2.2em;
+        margin-right: 2em;
+      }
+    @media only screen and (max-width: 500px){
+        margin-left: 1em;
+        margin-right: -1em;
+      }
+    
+    
+}
+
+.orientation-container p{
+    // THIS FONT IS SO UGLY
+    width:auto; 
+    float:center; 
+    margin-left: 5.4em;
+    margin-right:1em;
+    font-weight:500;
+    margin-top:1em;
+    line-height: 1.3em;
+    order:-1;
+    background-color: #BDB7E9;
+
+    @media only screen and (max-width: 500px){
+        margin-left: 2em;
+      }
+    
+}
+
+.welcome-messaging{
+    font-size: 1.4em;
+
+    @media only screen and (max-width:800px){
+        font-size: 1em;
+    }
+
+    @media only screen and (max-width: 500px){
+        font-size: 1em;
+    }
+}
+
+.clear{clear:both;}
+
+.welcome-flexboxes{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    flex-direction: row-reverse;
+
+    @media only screen and (max-width: 500px){
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: none;
+      }
+}
+
+.welcome-image-container{
+    display: flex;
+    flex-basis: 33%;
+    flex-direction: column;
+    justify-content: flex-start;
+    //width:auto;
+    margin-bottom: 0.1em;
+    margin-right:6em;
+    margin-top:-6.8em;
+    order:1;
+    object-fit: contain;
+    img{
+        width:95%;
+        height:auto;
+        margin-bottom: 1em;
+        
+    }
+    @media only screen and (max-width:800px){
+        margin-top: 1.19em;
+        margin-right: 1em;
+    }
+    @media only screen and (max-width: 500px){
+        margin-right: 1em;
+        margin-left: 1em;
+        align-items: center;
+        margin-bottom: 1em;
+        img{
+            width: 70%;
+            height: auto;
+            margin-bottom: 0.5em;
+            justify-content: center;
+        }
+        
+      }
+      @media only screen and (max-width: 400px){
+        margin-right: 1em;
+        margin-left: 1em;
+        align-items: center;
+        margin-bottom: 1em;
+        margin-top: 0em;
+        img{
+            width: 65%;
+            height: auto;
+            margin-bottom: 0.5em;
+            justify-content: center;
+        }
+        
+      }
+  }

@@ -1,0 +1,43 @@
+// style.scss
+// New scss files will require an @use tag here to be compilied into the css file
+
+$halyard-font : "halyard-text", sans-serif;
+@use "_nav.scss";
+@use "_page.scss";
+@use "_flexboxalignment.scss";
+@use "_margins.scss";
+@use "_landing.scss";
+@use "_tc.scss";
+@use "_sponsors.scss";
+@use "_orientation.scss";
+@use "_jarallax.scss";
+@use "_footer.scss";
+@use "_faq.scss";
+@use "_registration.scss";
+@use "_handbook.scss";
+
+$qcomp-dark-purple : #867eeb;
+$qcomp-light-purple: #BDB7E9;
+
+// If you want colour ideas I like to look through the visual studio files
+// What did I even mean by this lol
+
+// Pretty sure this is never used
+.body{
+    font-family : halyard-text, sans-serif;
+    
+}
+
+body{
+    display:block;
+    margin:0px;
+    overflow-x: hidden;
+    
+}
+
+// Since this is basically used everywhere
+// Actually cannot recall a single place this is used
+.swag-break{
+    display: block;
+    height: 100px;
+}
